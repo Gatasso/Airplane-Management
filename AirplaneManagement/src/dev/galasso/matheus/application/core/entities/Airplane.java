@@ -1,15 +1,15 @@
 package dev.galasso.matheus.application.core.entities;
 
 public class Airplane {
-    private Seat[] allSeats;
-    private int sections,chairsPerSection,linesPerSection;
-    private double framesOnPlane;
+    private final Seat[] allSeats;
+    private final int sections;
+    private final int chairsPerSection;
+    private final double framesOnPlane;
 
     public Airplane(int sections, int chairsPerSection, int linesPerSection) {
         this.sections = sections;
         this.chairsPerSection = chairsPerSection;
-        this.linesPerSection = linesPerSection;
-        final int CAPACITY = (this.sections * this.chairsPerSection * this.linesPerSection);
+        final int CAPACITY = (this.sections * this.chairsPerSection * linesPerSection);
         framesOnPlane = CAPACITY/(Math.pow(this.sections,this.chairsPerSection));
         allSeats = new Seat[CAPACITY];
         createAllSeats();
