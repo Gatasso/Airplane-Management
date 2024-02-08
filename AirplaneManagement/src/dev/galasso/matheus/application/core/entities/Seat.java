@@ -1,12 +1,18 @@
 package dev.galasso.matheus.application.core.entities;
 
 public class Seat {
-    private char section;
-    private int place;
+    private boolean isOccupied;
+    private final char section;
+    private final int place;
 
     public Seat(char section, int place) {
         this.section = section;
         this.place = place;
+        isOccupied = false;
+    }
+
+    public void setOccupied(boolean occupied) {
+        isOccupied = occupied;
     }
 
     @Override
