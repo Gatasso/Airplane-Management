@@ -11,8 +11,8 @@ public class Seat {
         isOccupied = false;
     }
 
-    public void setOccupied(boolean occupied) {
-        isOccupied = occupied;
+    public void setOccupied() {
+        isOccupied=true;
     }
 
     @Override
