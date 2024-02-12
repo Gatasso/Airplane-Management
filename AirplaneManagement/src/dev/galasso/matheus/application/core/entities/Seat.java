@@ -17,6 +17,9 @@ public class Seat {
 
     @Override
     public String toString() {
+        if (isOccupied){
+            return "X";
+        }
         return " "+section+place+" ";
     }
 }
