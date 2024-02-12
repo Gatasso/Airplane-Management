@@ -17,7 +17,7 @@ public class Airplane {
         framesOnPlane = checkDivisionOfFrames(CAPACITY, this.sections,this.chairsPerSection);
         seatMap = new SeatMap();
         createAllSeats();
-
+        seatMap.printSeatMap();
     }
 
     private void createAllSeats(){
@@ -29,8 +29,6 @@ public class Airplane {
                 counter++;
             }frameCounter++;
         }seatMap.createSeatMap(allSeats, framesOnPlane, this.sections, this.chairsPerSection);
-
-
     }
     public void printSeats(){
         for (Seat seat : allSeats) {
