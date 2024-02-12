@@ -5,15 +5,9 @@ import dev.galasso.matheus.application.core.exceptions.NotDivisibleArrangementEx
 
 public class Main {
     public static void main(String[] args) throws NotDivisibleArrangementException {
-        new Airplane(4,2,40);
-        System.out.println(" ");
-        System.out.println(" ");
-        System.out.println(" ");
-        new Airplane(2,4,20);
-        System.out.println(" ");
-        System.out.println(" ");
-        System.out.println(" ");
         new Airplane(3,3,18);
-
+        System.out.println();
+        System.out.println();
+        new Airplane(2,4,16);
     }
 }
